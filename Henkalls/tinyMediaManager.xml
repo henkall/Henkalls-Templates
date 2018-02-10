@@ -11,8 +11,7 @@
   <Overview>TinyMedaManager&#xD;
 &#xD;
 Now it works almost without any problems.&#xD;
-&#xD;
-[b]Converted By Community Applications[/b]</Overview>
+  </Overview>
   <Category>MediaApp:Other</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
@@ -27,8 +26,7 @@ Now it works almost without any problems.&#xD;
   <Description>TinyMedaManager&#xD;
 &#xD;
 Now it works almost without any problems.&#xD;
-&#xD;
-[b]Converted By Community Applications[/b]</Description>
+  </Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
