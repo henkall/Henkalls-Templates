@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>tinymediamanagerv2</Name>
+  <Repository>henkallsn/tinymediamanagerv2</Repository>
+  <Registry>https://hub.docker.com/r/henkallsn/tinymediamanagerv2/~/dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/henkallsn/tinymediamanagerv2/</Support>
+  <Project/>
+  <Overview>TinyMedaManager&#xD;
+&#xD;
+Now it works almost without any problems.&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Overview>
+  <Category>MediaApp:Other</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>http://i.imgur.com/o9leX9c.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <DateInstalled>1518297753</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>TinyMedaManager&#xD;
+&#xD;
+Now it works almost without any problems.&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>3389</HostPort>
+        <ContainerPort>3389</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/mnt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/tinymediamanagerv2</HostDir>
+      <ContainerDir>/config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="Host Port 1" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="true" Mask="false">3389</Config>
+  <Config Name="Host Port 2" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
+  <Config Name="Media to Rename" Target="/mnt" Default="" Mode="rw" Description="Container Path: /mnt" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/tinymediamanagerv2" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/tinymediamanagerv2</Config>
+</Container>
