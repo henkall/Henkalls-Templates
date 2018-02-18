@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>COD4-ModernPaintball</Name>
+  <Repository>henkallsn/docker-cod4</Repository>
+  <Registry>https://hub.docker.com/r/henkallsn/docker-cod4/~/dockerfile/</Registry>
+  <Network>br0</Network>
+  <MyIP>192.168.2.36</MyIP>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/henkallsn/docker-cod4/</Support>
+  <Project/>
+  <Overview>Docker to run Call of Duty 4 Dedicated Server&#xD;
+&#xD;
+Credit to matracey&#xD;
+&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Overview>
+  <Category>Other: Status:Beta</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://github.com/Squidly271/community.applications/raw/master/source/community.applications/usr/local/emhttp/plugins/community.applications/images/question.png</Icon>
+  <ExtraParams/>
+  <PostArgs>+set net_port "28961" +set fs_game "mods/modernpaintball" +set sv_authorizemode '-1' +exec server.cfg +map_rotate</PostArgs>
+  <DateInstalled>1518983062</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <DonateImg/>
+  <MinVer/>
+  <Description>Docker to run Call of Duty 4 Dedicated Server&#xD;
+&#xD;
+Credit to matracey&#xD;
+&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Description>
+  <Networking>
+    <Mode>br0</Mode>
+    <Publish>
+      <Port>
+        <HostPort>28961</HostPort>
+        <ContainerPort/>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/main/</HostDir>
+      <ContainerDir>/home/cod4/main</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/zone/</HostDir>
+      <ContainerDir>/home/cod4/zone</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/mods/</HostDir>
+      <ContainerDir>/home/cod4/mods</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/usermaps/</HostDir>
+      <ContainerDir>/home/cod4/usermaps</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/mods/modernpaintball/serverpbv2.cfg</HostDir>
+      <ContainerDir>/home/cod4/main/server.cfg</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Config Name="Host Path 1" Target="/home/cod4/main" Default="" Mode="rw" Description="Container Path: /home/cod4/main" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/main/</Config>
+  <Config Name="Host Path 2" Target="/home/cod4/zone" Default="" Mode="rw" Description="Container Path: /home/cod4/zone" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/zone/</Config>
+  <Config Name="Host Path 3" Target="/home/cod4/mods" Default="" Mode="rw" Description="Container Path: /home/cod4/mods" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/mods/</Config>
+  <Config Name="Host Path 4" Target="/home/cod4/usermaps" Default="" Mode="rw" Description="Container Path: /home/cod4/usermaps" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/usermaps/</Config>
+  <Config Name="Host Path 5" Target="/home/cod4/main/server.cfg" Default="" Mode="rw" Description="Container Path: /home/cod4/main/server.cfg" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/mods/modernpaintball/serverpbv2.cfg</Config>
+  <Config Name="COD4 Port" Target="" Default="" Mode="tcp" Description="Container Port: 28961" Type="Port" Display="always" Required="false" Mask="false">28961</Config>
+</Container>
