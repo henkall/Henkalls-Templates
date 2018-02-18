@@ -17,7 +17,7 @@ Credit to matracey&#xD;
   <Category>Other: Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://github.com/henkall/docker-cod4/blob/master/cod4.ico</Icon>
+  <Icon>https://github.com/henkall/Henkalls-Templates/blob/master/Henkalls/icons/cod4.png?raw=true</Icon>
   <ExtraParams/>
   <PostArgs>+set net_port "28961" +set fs_game "mods/modernpaintball" +set sv_authorizemode '-1' +exec server.cfg +map_rotate</PostArgs>
   <DateInstalled>1518983062</DateInstalled>
