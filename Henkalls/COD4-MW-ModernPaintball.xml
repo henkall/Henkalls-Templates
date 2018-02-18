@@ -17,7 +17,7 @@ Credit to matracey&#xD;
   <Category>Other: Status:Beta</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://github.com/Squidly271/community.applications/raw/master/source/community.applications/usr/local/emhttp/plugins/community.applications/images/question.png</Icon>
+  <Icon>https://github.com/henkall/docker-cod4/blob/master/cod4.ico</Icon>
   <ExtraParams/>
   <PostArgs>+set net_port "28961" +set fs_game "mods/modernpaintball" +set sv_authorizemode '-1' +exec server.cfg +map_rotate</PostArgs>
   <DateInstalled>1518983062</DateInstalled>
