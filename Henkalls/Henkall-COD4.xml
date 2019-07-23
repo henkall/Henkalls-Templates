@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>docker-cod4-new</Name>
+  <Repository>henkallsn/docker-cod4:windows</Repository>
+  <Registry>https://hub.docker.com/r/henkallsn/docker-cod4/~/dockerfile/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/henkallsn/docker-cod4/</Support>
+  <Project/>
+  <Overview>Docker to run Call of Duty 4 Dedicated Server&#xD;
+&#xD;
+Credit to matracey&#xD;
+&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/henkall/Henkalls-Templates/master/Henkalls/icons/cod4.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1563910717</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Docker to run Call of Duty 4 Dedicated Server&#xD;
+&#xD;
+Credit to matracey&#xD;
+&#xD;
+&#xD;
+[b]Converted By Community Applications[/b]</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>28960</HostPort>
+        <ContainerPort>28960</ContainerPort>
+        <Protocol>udp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/main/</HostDir>
+      <ContainerDir>/home/cod4/main</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/zone/</HostDir>
+      <ContainerDir>/home/cod4/zone</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/mods/</HostDir>
+      <ContainerDir>/home/cod4/mods</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/usermaps/</HostDir>
+      <ContainerDir>/home/cod4/usermaps</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/COD4/res/main/server.cfg</HostDir>
+      <ContainerDir>/home/cod4/main/server.cfg</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>YES</Value>
+      <Name>READY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>1</Value>
+      <Name>SERVERTYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>28960</Value>
+      <Name>PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>+map_rotate</Value>
+      <Name>MAP</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>ModWarfare</Value>
+      <Name>MODNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>+set sv_authorizemode -1</Value>
+      <Name>EXTRA</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Path 1" Target="/home/cod4/main" Default="" Mode="rw" Description="Container Path: /home/cod4/main" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/main/</Config>
+  <Config Name="Host Path 2" Target="/home/cod4/zone" Default="" Mode="rw" Description="Container Path: /home/cod4/zone" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/zone/</Config>
+  <Config Name="Host Path 3" Target="/home/cod4/mods" Default="" Mode="rw" Description="Container Path: /home/cod4/mods" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/mods/</Config>
+  <Config Name="Host Path 4" Target="/home/cod4/usermaps" Default="" Mode="rw" Description="Container Path: /home/cod4/usermaps" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/usermaps/</Config>
+  <Config Name="Host Path 5" Target="/home/cod4/main/server.cfg" Default="" Mode="rw" Description="Container Path: /home/cod4/main/server.cfg" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/COD4/res/main/server.cfg</Config>
+  <Config Name="READY" Target="READY" Default="" Mode="" Description="Container Variable: READY" Type="Variable" Display="always" Required="false" Mask="false">YES</Config>
+  <Config Name="SERVERTYPE" Target="SERVERTYPE" Default="" Mode="" Description="Container Variable: SERVERTYPE" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="PORT" Target="PORT" Default="" Mode="" Description="Container Variable: PORT" Type="Variable" Display="always" Required="false" Mask="false">28960</Config>
+  <Config Name="MAP" Target="MAP" Default="" Mode="" Description="Container Variable: MAP" Type="Variable" Display="always" Required="false" Mask="false">+map_rotate</Config>
+  <Config Name="MODNAME" Target="MODNAME" Default="" Mode="" Description="Container Variable: MODNAME" Type="Variable" Display="always" Required="false" Mask="false">ModWarfare</Config>
+  <Config Name="EXTRA" Target="EXTRA" Default="" Mode="" Description="Container Variable: EXTRA" Type="Variable" Display="always" Required="false" Mask="false">+set sv_authorizemode -1</Config>
+  <Config Name="PortFW" Target="28960" Default="" Mode="udp" Description="Container Port: 28960" Type="Port" Display="always" Required="false" Mask="false">28960</Config>
+</Container>
