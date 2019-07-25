@@ -29,6 +29,11 @@
         <ContainerPort>3389</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
     </Publish>
   </Networking>
   <Data>
@@ -42,16 +47,11 @@
       <ContainerDir>/mnt/media</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
-    <Volume>
-      <HostDir>8080</HostDir>
-      <ContainerDir>8080</ContainerDir>
-      <Mode>rw</Mode>
-    </Volume>
   </Data>
   <Environment/>
   <Labels/>
   <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TinyMediaManagerV3</Config>
   <Config Name="Media" Target="/mnt/media" Default="" Mode="rw" Description="Change this to your needs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/LanShare/Film/</Config>
   <Config Name="RDP Port" Target="3389" Default="" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
-  <Config Name="Web Gui Port" Target="8080" Default="" Mode="rw" Description="Container Path: 8080" Type="Path" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Web Gui Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
 </Container>
