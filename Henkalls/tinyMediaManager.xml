@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>tinymediamanager3_nightly</Name>
+  <Name>TinyMediaManagerV3</Name>
   <Repository>henkallsn/tinymediamanager3_nightly</Repository>
   <Registry>https://hub.docker.com/r/henkallsn/tinymediamanager3_nightly/</Registry>
   <Network>bridge</Network>
@@ -17,7 +17,7 @@
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1564066092</DateInstalled>
+  <DateInstalled>1564067750</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>TinyMediaManager Version 3 Stable and Nightly Releases   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
@@ -25,13 +25,8 @@
     <Mode>bridge</Mode>
     <Publish>
       <Port>
-        <HostPort>3389</HostPort>
-        <ContainerPort>3389</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
+        <HostPort>8088</HostPort>
+        <ContainerPort>5800</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
     </Publish>
@@ -50,8 +45,7 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TinyMediaManagerV3</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/tinymediamanager3_nightly" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TinyMediaManagerV3</Config>
   <Config Name="Media" Target="/mnt/media" Default="" Mode="rw" Description="Change this to your needs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/LanShare/Film/</Config>
-  <Config Name="RDP Port" Target="3389" Default="" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
-  <Config Name="Web Gui Port" Target="8080" Default="" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Web Gui Port" Target="5800" Default="" Mode="tcp" Description="Container Port: 5800" Type="Port" Display="always" Required="false" Mask="false">8088</Config>
 </Container>
