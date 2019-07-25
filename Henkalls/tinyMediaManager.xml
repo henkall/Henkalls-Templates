@@ -1,32 +1,26 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>tinymediamanagerv2</Name>
-  <Repository>henkallsn/tinymediamanagerv2</Repository>
-  <Registry>https://hub.docker.com/r/henkallsn/tinymediamanagerv2/~/dockerfile/</Registry>
+  <Name>tinymediamanager3_nightly</Name>
+  <Repository>henkallsn/tinymediamanager3_nightly</Repository>
+  <Registry>https://hub.docker.com/r/henkallsn/tinymediamanager3_nightly/</Registry>
   <Network>bridge</Network>
   <MyIP/>
+  <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/henkallsn/tinymediamanagerv2/</Support>
+  <Support>https://hub.docker.com/r/henkallsn/tinymediamanager3_nightly/</Support>
   <Project/>
-  <Overview>TinyMedaManager&#xD;
-&#xD;
-Now it works almost without any problems.&#xD;
-  </Overview>
-  <Category>MediaApp:Other</Category>
-  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <Overview>TinyMediaManager Version 3 Stable and Nightly Releases   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Category/>
+  <WebUI/>
   <TemplateURL/>
-  <Icon>http://i.imgur.com/o9leX9c.png</Icon>
+  <Icon>https://github.com/henkall/Henkalls-Templates/raw/master/Henkalls/icons/tinymediamanager.png</Icon>
   <ExtraParams/>
   <PostArgs/>
-  <DateInstalled>1518297753</DateInstalled>
+  <CPUset/>
+  <DateInstalled>1564066092</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <DonateImg/>
-  <MinVer/>
-  <Description>TinyMedaManager&#xD;
-&#xD;
-Now it works almost without any problems.&#xD;
-  </Description>
+  <Description>TinyMediaManager Version 3 Stable and Nightly Releases   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -35,28 +29,29 @@ Now it works almost without any problems.&#xD;
         <ContainerPort>3389</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-      <Port>
-        <HostPort>8080</HostPort>
-        <ContainerPort>8080</ContainerPort>
-        <Protocol>tcp</Protocol>
-      </Port>
     </Publish>
   </Networking>
   <Data>
     <Volume>
-      <HostDir/>
-      <ContainerDir>/mnt</ContainerDir>
+      <HostDir>/mnt/user/appdata/TinyMediaManagerV3</HostDir>
+      <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
     <Volume>
-      <HostDir>/mnt/user/appdata/tinymediamanagerv2</HostDir>
-      <ContainerDir>/config</ContainerDir>
+      <HostDir>/mnt/user/LanShare/Film/</HostDir>
+      <ContainerDir>/mnt/media</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>8080</HostDir>
+      <ContainerDir>8080</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
   <Environment/>
-  <Config Name="Host Port 1" Target="3389" Default="3389" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="true" Mask="false">3389</Config>
-  <Config Name="Host Port 2" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
-  <Config Name="Media to Rename" Target="/mnt" Default="" Mode="rw" Description="Container Path: /mnt" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="AppData Config Path" Target="/config" Default="/mnt/user/appdata/tinymediamanagerv2" Mode="rw" Description="Container Path: /config" Type="Path" Display="advanced-hide" Required="true" Mask="false">/mnt/user/appdata/tinymediamanagerv2</Config>
+  <Labels/>
+  <Config Name="Config" Target="/config" Default="" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TinyMediaManagerV3</Config>
+  <Config Name="Media" Target="/mnt/media" Default="" Mode="rw" Description="Change this to your needs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/LanShare/Film/</Config>
+  <Config Name="RDP Port" Target="3389" Default="" Mode="tcp" Description="Container Port: 3389" Type="Port" Display="always" Required="false" Mask="false">3389</Config>
+  <Config Name="Web Gui Port" Target="8080" Default="" Mode="rw" Description="Container Path: 8080" Type="Path" Display="always" Required="false" Mask="false">8080</Config>
 </Container>
