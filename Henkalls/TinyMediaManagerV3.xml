@@ -11,13 +11,13 @@
   <Project/>
   <Overview>TinyMediaManager Version 3 Stable and Nightly Releases   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
   <Category/>
-  <WebUI/>
+  <WebUI>http://[IP]:[PORT:8088]/</WebUI>
   <TemplateURL/>
   <Icon>https://github.com/henkall/Henkalls-Templates/raw/master/Henkalls/icons/tinymediamanager.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1564067750</DateInstalled>
+  <DateInstalled>1564069061</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>TinyMediaManager Version 3 Stable and Nightly Releases   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
