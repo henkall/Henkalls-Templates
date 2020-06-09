@@ -72,50 +72,46 @@
         "bind": "/path/to/COD4/gamefiles"
       }
     ],
-	"env": [
-	  {
+    "env": [
+      {
         "name": "READY",
         "label": "READY",
         "default": "YES",
         "preset": true
-	  },
-	  {
+      },
+      {
         "name": "EXECFILE",
         "label": "EXECFILE",
         "default": "server.cfg",
         "preset": true
-	  },
-	  {
+      },
+      {
         "name": "SERVERTYPE",
         "label": "SERVERTYPE",
-        "default": "1",
-        "preset": true
-	  },
-	  {
+        "default": "1"
+      },
+      {
         "name": "PORT",
         "label": "PORT",
-        "default": "28960",
-        "preset": true
-	  },
-	  {
+        "default": "28960"
+      },
+      {
         "name": "MAP",
         "label": "MAP",
         "default": "+map_rotate",
         "preset": true
-	  },
-	  {
+      },
+      {
         "name": "MODNAME",
         "label": "MODNAME",
-        "default": "",
-        "preset": false
-	  },
-	  {
+        "default": ""
+      },
+      {
         "name": "EXTRA",
         "label": "EXTRA",
-        "default": "+set sv_authorizemode -1",
-        "preset": true
-	  }
-	]
+        "default": "+set sv_authorizemode -1"
+      }
+    ]
   },
   {
     "type": 1,
