@@ -45,6 +45,10 @@
       {
         "container": "/config",
         "bind": "/path/to/AppData/Config/TinyMediaManager"
+      },
+      {
+        "container": "/media",
+        "bind": "/path/to/media"
       }
     ]
   },
