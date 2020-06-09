@@ -25,6 +25,31 @@
   },
   {
     "type": 1,
+    "title": "TinyMediaManager",
+    "name": "TinyMediaManager",
+    "description": "This is a docker that contains TinyMediaManager with Webgui and VNC gui.",
+    "note": "This is just a copy of romancin's version but updated to Tinymediamanager 3 stable",
+    "logo": "https://yt3.ggpht.com/a/AATXAJzpEQ4JFvVyYPnBtikbO8dtsMi7SvEGC7HjZQ=s288-c-k-c0xffffffff-no-rj-mo",
+    "image": "henkallsn/tinymediamanager",
+    "categories": [
+      "Other",
+      "Tools"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+    "ports": [
+      "5800:5800/tcp",
+	  "5900:5900/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/path/to/AppData/Config/TinyMediaManager"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "Wikijs",
     "name": "Wikijs",
     "description": "A clientless remote desktop gateway.",
