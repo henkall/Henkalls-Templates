@@ -122,7 +122,7 @@
         "name": "FIVEM_LICENCE_KEY",
         "label": "FiveM Licence Key",
         "default": "change me"
-      }
+      },
       {
         "name": "STEAM_WEBAPIKEY",
         "label": "Steam Web API key",
