@@ -54,6 +54,116 @@
   },
   {
     "type": 1,
+    "title": "FiveM-ESX-Bundle",
+    "name": "FiveMESX",
+    "description": "Contains FiveM with a ESX bunlde and presetup with database + txAdmin",
+    "note": "Based on FiveM server and txAdmin",
+    "logo": "https://portforward.com/fivem/fivem-logo.png",
+    "image": "henkallsn/fivem_esx_bundle",
+    "categories": [
+      "GameServer"
+    ],
+    "platform": "linux",
+    "restart_policy": "unless-stopped",
+	"ports": [
+      "30120:30120/tcp",
+	  "30120:30120/udp",
+	  "40120:40120/tcp"
+    ],
+    "volumes": [
+      {
+        "container": "/config",
+        "bind": "/path/to/fivem/resources"
+      },
+	  {
+        "container": "/txData",
+        "bind": "/path/to/txAdmin/config"
+      },
+	  {
+        "container": "/var/lib/mysql",
+        "bind": "/path/to/mysql/data"
+      }
+    ],
+    "env": [
+      {
+        "name": "SERVER_PROFILE",
+        "label": "SERVER_PROFILE",
+        "default": "default",
+        "preset": true
+      },
+      {
+        "name": "FIVEM_PORT",
+        "label": "FiveM Game Port",
+        "default": "30120"
+      },
+      {
+        "name": "TXADMIN_PORT",
+        "label": "txAdmin Webgui Port",
+        "default": "40120"
+      },
+      {
+        "name": "HOST_UID",
+        "label": "User ID",
+        "default": "998",
+		"preset": true
+      },
+      {
+        "name": "HOST_GID",
+        "label": "Group ID",
+        "default": "100",
+        "preset": true
+      },
+      {
+        "name": "FIVEM_HOSTNAME",
+        "label": "FiveM GameServer Name",
+        "default": "change me"
+      },
+      {
+        "name": "FIVEM_LICENCE_KEY",
+        "label": "FiveM Licence Key",
+        "default": "change me"
+      }
+      {
+        "name": "STEAM_WEBAPIKEY",
+        "label": "Steam Web API key",
+        "default": "change me"
+      },
+	  {
+        "name": "DATABASE_SERVICE_NAME",
+        "label": "DATABASE_SERVICE_NAME",
+        "default": "localhost",
+		"preset": true
+      },
+	  {
+        "name": "MYSQL_DATABASE",
+        "label": "Database Name",
+        "default": "change me"
+      },
+	  {
+        "name": "MYSQL_USER",
+        "label": "Database User",
+        "default": "change me"
+      },
+	  {
+        "name": "MYSQL_PASSWORD",
+        "label": "Database Pssword",
+        "default": "change me"
+      },
+	  {
+        "name": "MYSQL_RANDOM_ROOT_PASSWORD",
+        "label": "MYSQL_RANDOM_ROOT_PASSWORD",
+        "default": "1",
+		"preset": true
+      },
+	  {
+        "name": "TZ",
+        "label": "TimeZone",
+        "default": "Europe/Copenhagen"
+      }
+    ]
+  },
+  {
+    "type": 1,
     "title": "COD4xServer",
     "name": "COD4DED",
     "description": "Runs a Call of duty 4 Modern Warfare dedicated server in a Docker container",
