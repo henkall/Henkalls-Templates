@@ -75,11 +75,11 @@
         "container": "/config",
         "bind": "/path/to/fivem/resources"
       },
-	  {
+      {
         "container": "/txData",
         "bind": "/path/to/txAdmin/config"
       },
-	  {
+      {
         "container": "/var/lib/mysql",
         "bind": "/path/to/mysql/data"
       }
@@ -128,34 +128,34 @@
         "label": "Steam Web API key",
         "default": "change me"
       },
-	  {
+      {
         "name": "DATABASE_SERVICE_NAME",
         "label": "DATABASE_SERVICE_NAME",
         "default": "localhost",
 		"preset": true
       },
-	  {
+      {
         "name": "MYSQL_DATABASE",
         "label": "Database Name",
         "default": "change me"
       },
-	  {
+      {
         "name": "MYSQL_USER",
         "label": "Database User",
         "default": "change me"
       },
-	  {
+      {
         "name": "MYSQL_PASSWORD",
         "label": "Database Pssword",
         "default": "change me"
       },
-	  {
+      {
         "name": "MYSQL_RANDOM_ROOT_PASSWORD",
         "label": "MYSQL_RANDOM_ROOT_PASSWORD",
         "default": "1",
 		"preset": true
       },
-	  {
+      {
         "name": "TZ",
         "label": "TimeZone",
         "default": "Europe/Copenhagen"
