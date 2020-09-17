@@ -64,7 +64,7 @@
         {
           "label": "User ID",
           "name": "HOST_UID",
-          "set": "1000"
+          "default": "1000"
         },
         {
           "label": "Group ID",
