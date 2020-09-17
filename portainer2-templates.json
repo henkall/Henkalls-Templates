@@ -64,14 +64,12 @@
         {
           "label": "User ID",
           "name": "HOST_UID",
-          "set": "998",
-          "preset": true
+          "set": "1000"
         },
         {
           "label": "Group ID",
           "name": "HOST_GID",
-          "set": "100",
-          "preset": true
+          "set": "100"
         },
         {
           "label": "FiveM GameServer Name",
