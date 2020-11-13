@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>TinyMediaManagerV3</Name>
-  <Repository>henkallsn/tinymediamanager3_nightly</Repository>
-  <Registry>https://hub.docker.com/r/henkallsn/tinymediamanager3_nightly/</Registry>
+  <Name>TinyMediaManager</Name>
+  <Repository>henkallsn/tinymediamanager</Repository>
+  <Registry>https://hub.docker.com/r/henkallsn/tinymediamanager/</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://hub.docker.com/r/henkallsn/tinymediamanager3_nightly/</Support>
+  <Support>https://hub.docker.com/r/henkallsn/tinymediamanager/</Support>
   <Project/>
-  <Overview>TinyMediaManager Version 3 Stable and Nightly Releases   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Overview>
+  <Overview>TinyMediaManager Version 3 Stable</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:8088]/</WebUI>
   <TemplateURL/>
@@ -20,7 +20,7 @@
   <DateInstalled>1564069061</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description>TinyMediaManager Version 3 Stable and Nightly Releases   Converted By Community Applications   Always verify this template (and values) against the dockerhub support page for the container</Description>
+  <Description>TinyMediaManager Version 3 Stable</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
@@ -33,7 +33,7 @@
   </Networking>
   <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/TinyMediaManagerV3</HostDir>
+      <HostDir>/mnt/user/appdata/TinyMediaManager</HostDir>
       <ContainerDir>/config</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
@@ -45,7 +45,7 @@
   </Data>
   <Environment/>
   <Labels/>
-  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/tinymediamanager3_nightly" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TinyMediaManagerV3</Config>
+  <Config Name="Config" Target="/config" Default="/mnt/user/appdata/tinymediamanager" Mode="rw" Description="Container Path: /config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/TinyMediaManager</Config>
   <Config Name="Media" Target="/mnt/media" Default="" Mode="rw" Description="Change this to your needs" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/LanShare/Film/</Config>
   <Config Name="Web Gui Port" Target="5800" Default="" Mode="tcp" Description="Container Port: 5800" Type="Port" Display="always" Required="false" Mask="false">8088</Config>
 </Container>
