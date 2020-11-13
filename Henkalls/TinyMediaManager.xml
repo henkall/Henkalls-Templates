@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8088]/</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/henkall/Henkalls-Templates/raw/master/Henkalls/icons/tinymediamanager.png</Icon>
+  <Icon>https://github.com/henkall/Henkalls-Templates/raw/master/Henkalls/icons/tinymediamanager.jpg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
